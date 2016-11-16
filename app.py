@@ -6,7 +6,7 @@ app = Flask(__name__)
 print 'run'
 
 def say(s):
-	requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "dd9b73d649bbf8e5050b1e600c","text": s})
+	requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "b24ce747ab0015068a61460d85","text": s})
 
 @app.route('/', methods = ['GET'])
 def hello_world():
@@ -17,8 +17,8 @@ def hello_world():
 def respond():
 	message = request.get_json(force=True)
 	if message['name']!='Test Bot':
-		if message['name'] == 'Michael Siciliano':
-			say('Hi Mike, good to hear from you.')
+		#if message['name'] == 'Michael Siciliano':
+			#say('Hi Mike, good to hear from you.')
 
 		me=re.compile("\\b\\w+er\\b")
 		m=me.findall(message['text'])
@@ -26,8 +26,8 @@ def respond():
 			if len(x)>3:
 				say("{0} her? I hardly know her!".format(x[0:-2]))
 
-		if 'just a gorilla' in message['text'].lower():
-			say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
+		#if 'just a gorilla' in message['text'].lower():
+			#say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
 
 		elif 'harambe' in message['text'].lower():
 			say("DICKSOUT")
