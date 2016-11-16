@@ -1,1 +1,1 @@
-# knowherbot
+# bot
