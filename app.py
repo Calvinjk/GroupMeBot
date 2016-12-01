@@ -17,7 +17,7 @@ def masterRunEverything():
 
 	if request.method == 'POST':
 		message = request.get_json(force=True)
-		if message['name']!='Troll':
+		if message['name']!='Heroku "The Bot"':
 
 			#Know her?
 			
