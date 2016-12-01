@@ -21,8 +21,12 @@ def masterRunEverything():
 		if message['name']!='Troll':
 
 			#Know her?
-			me=re.compile("\\b\\w+er\\b")
-			m=me.findall(message['text'])
+			
+			me = re.compile("\\b\\w+er\\b")
+			m = me.findall(message['text'])
+			#firstWord = me.split(' ', 1)[0]
+			#lastWord = me.split(' ', 1)[-1]
+			
 			for x in m:
 				if len(x)>3:
 					say("{0} 'er? I hardly know her!".format(x[0:-2]))
@@ -33,7 +37,7 @@ def masterRunEverything():
 
 			#Monica response
 			if message['name'] == 'Monica Curry':
-				say('My nigga, monica')
+				say("Wow you're so smart and also beautiful")
 
 			#Gorilla Pics
 			if 'just a gorilla' in message['text'].lower():
@@ -61,7 +65,6 @@ def masterRunEverything():
  				say('https://postimg.org/image/' + picSuffix)	
 
 		return 'Fuckin test bot.'
-
 
 
 #@app.route('/', methods = ['POST'])
