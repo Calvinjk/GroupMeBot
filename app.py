@@ -19,17 +19,24 @@ def masterRunEverything():
 		message = request.get_json(force=True)
 		if message['name']!='Troll':
 
+			#Know her?
 			me=re.compile("\\b\\w+er\\b")
 			m=me.findall(message['text'])
 			for x in m:
 				if len(x)>3:
 					say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
+			#Harambe 
 			if 'harambe' in message['text'].lower():
 						say("DICKSOUT")
 
+			#Monica response
 			if message['name'] == 'Monica Curry':
 				say('My nigga, monica')
+
+			#Gorilla Pics
+			if 'just a gorilla' in message['text'].lower():
+ 				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
 
 		return 'Fuckin test bot.'
 
