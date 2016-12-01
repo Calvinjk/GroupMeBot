@@ -23,12 +23,10 @@ def masterRunEverything():
 			m=me.findall(message['text'])
 			for x in m:
 				if len(x)>3:
-					say("{0} her? I hardly know her!".format(x[0:-2]))
+					say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
 			if 'harambe' in message['text'].lower():
 						say("DICKSOUT")
-
-			say('Mwahahahhaa')
 
 		return 'Fuckin test bot.'
 
