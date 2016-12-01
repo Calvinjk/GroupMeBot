@@ -15,17 +15,20 @@ def masterRunEverything():
 		return 'This is the Test bot page.'
 	else:
 		def respond():
-			message = request.get_json(force=True)
-			if message['name']!='Troll Bot':
+			# message = request.get_json(force=True)
+			# if message['name']!='Troll Bot':
 
-				me=re.compile("\\b\\w+er\\b")
-				m=me.findall(message['text'])
-				for x in m:
-					if len(x)>3:
-						say("{0} her? I hardly know her!".format(x[0:-2]))
+			# 	me=re.compile("\\b\\w+er\\b")
+			# 	m=me.findall(message['text'])
+			# 	for x in m:
+			# 		if len(x)>3:
+			# 			say("{0} her? I hardly know her!".format(x[0:-2]))
 
-			elif 'harambe' in message['text'].lower():
-				say("DICKSOUT")
+			# elif 'harambe' in message['text'].lower():
+			# 	say("DICKSOUT")
+
+			say('Mwahahahhaa')
+
 			return 'Fuckin test bot.'
 
 
