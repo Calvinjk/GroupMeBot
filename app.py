@@ -23,8 +23,8 @@ def masterRunEverything():
 			
 			me = re.compile("\\b\\w+er\\b")
 			m = me.findall(message['text'])
-			firstWord = me.split(' ', 1)[0]
-			lastWord = me.split(' ', 1)[-1]
+			firstWord = m.split(' ', 1)[0]
+			lastWord = m.split(' ', 1)[-1]
 			lastWordContainsEr = false
 			for x in lastWord:
 				if len(x)>3:
