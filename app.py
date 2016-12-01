@@ -23,15 +23,15 @@ def masterRunEverything():
 			
 			me = re.compile("\\b\\w+er\\b")
 			m = me.findall(message['text'])
-			firstWord = m.split(' ', 1)[0]
-			lastWord = m.split(' ', 1)[-1]
 			lastWordContainsEr = false
-			for x in lastWord:
+			
+			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
+			for x in wordList[0]:
 				if len(x)>3:
 					say("{0} 'er? I hardly know her!".format(x[0:-2]))
 					lastWordContainsEr = true
 			if !lastWordContainsEr
-				for x in firstWord:
+				for x in wordList[-1]:
 					if len(x)>3:
 						say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
