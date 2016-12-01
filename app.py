@@ -9,7 +9,7 @@ def say(s):
 	requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "b24ce747ab0015068a61460d85","text": s})
 
 @app.route('/', methods = ['GET', 'POST'])
-if request.method == "GET":
+if request.method == 'GET':
 	def hello_world():
 		print 'viewed'
 		return 'This is the Test bot page.'
