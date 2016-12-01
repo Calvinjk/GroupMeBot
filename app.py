@@ -12,7 +12,6 @@ def say(s):
 @app.route('/', methods = ['GET', 'POST'])
 def masterRunEverything():
 	if request.method == 'GET':
-		say('Web page viewed')
 		print 'viewed'
 		return 'This is the Test bot page.'
 
@@ -33,15 +32,7 @@ def masterRunEverything():
 
 			#Harambe 
 			if 'harambe' in message['text'].lower():
-						say("DICKSOUT")
-
-			#Monica response
-			if message['name'] == 'Monica Curry':
-				say("Wow you're so smart and also beautiful")
-
-			#Gorilla Pics
-			if 'just a gorilla' in message['text'].lower():
-				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
+						say("DICKS OUT")
 
 			#Random Joe Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
