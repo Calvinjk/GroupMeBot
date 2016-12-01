@@ -53,7 +53,7 @@ def masterRunEverything():
 					if randNum == 3:
 						picSuffix = '5ixfku5p9/Sleepy_Joe1.jpg';
 					if randNum == 4:
-						picSuffix = '3s8wkdtowt/sleepyjoe2.jpg';
+						picSuffix = '5uzinsuin/sleepyjoe2.jpg';
 					if randNum == 5:
 						picSuffix = '4vyivb8t9/sleepyjoe3.jpg';
 					if randNum == 6:
