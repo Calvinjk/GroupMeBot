@@ -25,7 +25,8 @@ def masterRunEverything():
 			m = me.findall(message['text'])
 			#firstWord = me.split(' ', 1)[0]
 			#lastWord = me.split(' ', 1)[-1]
-			respondToEr(m)
+			if respondToEr(m):
+				say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
 			#Harambe 
 			if 'harambe' in message['text'].lower():
@@ -44,7 +45,7 @@ def masterRunEverything():
 def respondToEr(m):
 	for x in m:
 	if len(x)>3:
-		say("{0} 'er? I hardly know her!".format(x[0:-2]))
+		return true
 
 
 #@app.route('/', methods = ['POST'])
