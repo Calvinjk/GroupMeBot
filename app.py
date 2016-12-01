@@ -31,7 +31,8 @@ def masterRunEverything():
 			say('Mwahahahhaa')
 
 			return 'Fuckin test bot.'
-
+	if request.method == 'POST':
+		say('POST it up')
 
 
 
