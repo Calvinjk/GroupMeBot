@@ -21,14 +21,18 @@ def masterRunEverything():
 
 			#Know her?
 			
-			me = re.compile("\\b\\w+er\\b")
-			m = me.findall(message['text'])
-			#firstWord = me.split(' ', 1)[0]
-			#lastWord = me.split(' ', 1)[-1]
+			#me = re.compile("\\b\\w+er\\b")
+			#m = me.findall(message['text'])
 			
-			for x in m:
-				if len(x)>3:
-					say("{0} 'er? I hardly know her!".format(x[0:-2]))
+			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
+			last = wordList[-1]
+			first = wordList[0]
+			
+			if len(last) > 3 and last[-1] == 'r' and last[-2] == 'e':
+				say("{0} 'er? I hardly know her!".format(last[0:-2]))
+			elif len(first) > 3 and first[-1] == 'r' and first[-2] == 'e':
+				say("{0} 'er? I hardly know her!".format(first[0:-2]))
+				
 
 			#Harambe 
 			if 'harambe' in message['text'].lower():
