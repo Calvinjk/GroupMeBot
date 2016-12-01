@@ -25,10 +25,10 @@ def masterRunEverything():
 				if len(x)>3:
 					say("{0} her? I hardly know her!".format(x[0:-2]))
 
-		elif 'harambe' in message['text'].lower():
-			say("DICKSOUT")
+			if 'harambe' in message['text'].lower():
+						say("DICKSOUT")
 
-		say('Mwahahahhaa')
+			say('Mwahahahhaa')
 
 		return 'Fuckin test bot.'
 
