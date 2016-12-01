@@ -32,11 +32,11 @@ def hello_world():
 # 		elif 'harambe' in message['text'].lower():
 # 			say("DICKSOUT")
 
-# @app.route('/say', methods = ['GET'])
-# def send():
-# 	say('DICKSOUT')
+@app.route('/say', methods = ['GET'])
+ def send():
+ 	say('DICKSOUT')
 
-# 	return 'said dicksout.'
+ 	return 'said dicksout.'
 
 if __name__ == '__main__':
     # listen on external IPs
