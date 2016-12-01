@@ -1,6 +1,7 @@
 from flask import Flask,request
 import requests
 import re
+import random
 app = Flask(__name__)
 
 print 'run'
@@ -37,6 +38,27 @@ def masterRunEverything():
 			#Gorilla Pics
 			if 'just a gorilla' in message['text'].lower():
  				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
+
+ 			#Random Joe Pictures
+ 			if 'joe' in message['text'].lower():
+ 				randNum = random.randrange(0, 7)
+
+ 				if randNum == 0:
+ 					picSuffix = '6u56tb1ax/';
+ 				if randNum == 1:
+ 					picSuffix = '4qurln1i1/';
+ 				if randNum == 2:
+ 					picSuffix = 'rtlakt2zd/';
+ 				if randNum == 3:
+ 					picSuffix = 'qsl1volzt/';
+ 				if randNum == 4:
+ 					picSuffix = '3seejco61/';
+ 				if randNum == 5:
+ 					picSuffix = 'jf5nwq1y1/';
+ 				if randNum == 6:
+ 					picSuffix = '59zuuwswp/';
+
+ 				say('https://postimg.org/image/' + picSuffix)	
 
 		return 'Fuckin test bot.'
 
