@@ -28,6 +28,8 @@ def masterRunEverything():
 			if 'harambe' in message['text'].lower():
 						say("DICKSOUT")
 
+			say('My nigga, monica')
+
 		return 'Fuckin test bot.'
 
 
