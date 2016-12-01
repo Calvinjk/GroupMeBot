@@ -45,21 +45,21 @@ def masterRunEverything():
 					randNum = random.randrange(0, 7)
 
 					if randNum == 0:
-						picSuffix = '6u56tb1ax/';
+						picSuffix = 't62zmp0f1/banana_Joe.jpg';
 					if randNum == 1:
-						picSuffix = '4qurln1i1/';
+						picSuffix = 'jzkozev6l/Joeand_Nick.jpg';
 					if randNum == 2:
-						picSuffix = 'rtlakt2zd/';
+						picSuffix = 'c83z0ur19/peacock_Joe.jpg';
 					if randNum == 3:
-						picSuffix = 'qsl1volzt/';
+						picSuffix = '5ixfku5p9/Sleepy_Joe1.jpg';
 					if randNum == 4:
-						picSuffix = '3seejco61/';
+						picSuffix = '3s8wkdtowt/sleepyjoe2.jpg';
 					if randNum == 5:
-						picSuffix = 'jf5nwq1y1/';
+						picSuffix = '4vyivb8t9/sleepyjoe3.jpg';
 					if randNum == 6:
-						picSuffix = '59zuuwswp/';
+						picSuffix = '5zin79tgd/sleepyjoe4.jpg';
 
-					say('https://postimg.org/image/' + picSuffix)	
+					say('https://s12.postimg.org/' + picSuffix)	
 					break
 
 		return 'Fuckin test bot.'
