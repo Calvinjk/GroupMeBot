@@ -20,11 +20,12 @@ def masterRunEverything():
 		if message['name']!='Troll':
 
 			#Know her?
-			me=re.compile("\\b\\w+er\\b")
-			m=me.findall(message['text'])
-			for x in m:
-				if len(x)>3:
-					say("{0} 'er? I hardly know her!".format(x[0:-2]))
+			
+			me = re.compile("\\b\\w+er\\b")
+			m = me.findall(message['text'])
+			#firstWord = me.split(' ', 1)[0]
+			#lastWord = me.split(' ', 1)[-1]
+			respondToEr(m)
 
 			#Harambe 
 			if 'harambe' in message['text'].lower():
@@ -32,7 +33,7 @@ def masterRunEverything():
 
 			#Monica response
 			if message['name'] == 'Monica Curry':
-				say('My nigga, monica')
+				say("Wow you're so smart and also beautiful")
 
 			#Gorilla Pics
 			if 'just a gorilla' in message['text'].lower():
@@ -40,6 +41,10 @@ def masterRunEverything():
 
 		return 'Fuckin test bot.'
 
+def respondToEr(m):
+	for x in m:
+	if len(x)>3:
+		say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
 
 #@app.route('/', methods = ['POST'])
