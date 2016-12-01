@@ -13,7 +13,7 @@ def masterRunEverything():
 	if request.method == 'GET':
 		print 'viewed'
 		return 'This is the Test bot page.'
-	elif request.method == 'POST':
+	else:
 		# def respond():
 		message = request.get_json(force=True)
 		if message['name']!='Troll Bot':
@@ -26,6 +26,9 @@ def masterRunEverything():
 
 			elif 'harambe' in message['text'].lower():
 				say("DICKSOUT")
+
+
+
 
 #@app.route('/', methods = ['POST'])
 # def respond():
