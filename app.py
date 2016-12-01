@@ -41,28 +41,31 @@ def masterRunEverything():
 
 			#Gorilla Pics
 			if 'just a gorilla' in message['text'].lower():
- 				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
+				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
 
- 			#Random Joe Pictures
- 			if 'joe' in message['text'].lower():
- 				randNum = random.randrange(0, 7)
+			#Random Joe Pictures
+			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
+			for word in wordList:
+				if word == 'joe':
+					randNum = random.randrange(0, 7)
 
- 				if randNum == 0:
- 					picSuffix = '6u56tb1ax/';
- 				if randNum == 1:
- 					picSuffix = '4qurln1i1/';
- 				if randNum == 2:
- 					picSuffix = 'rtlakt2zd/';
- 				if randNum == 3:
- 					picSuffix = 'qsl1volzt/';
- 				if randNum == 4:
- 					picSuffix = '3seejco61/';
- 				if randNum == 5:
- 					picSuffix = 'jf5nwq1y1/';
- 				if randNum == 6:
- 					picSuffix = '59zuuwswp/';
+					if randNum == 0:
+						picSuffix = '6u56tb1ax/';
+					if randNum == 1:
+						picSuffix = '4qurln1i1/';
+					if randNum == 2:
+						picSuffix = 'rtlakt2zd/';
+					if randNum == 3:
+						picSuffix = 'qsl1volzt/';
+					if randNum == 4:
+						picSuffix = '3seejco61/';
+					if randNum == 5:
+						picSuffix = 'jf5nwq1y1/';
+					if randNum == 6:
+						picSuffix = '59zuuwswp/';
 
- 				say('https://postimg.org/image/' + picSuffix)	
+					say('https://postimg.org/image/' + picSuffix)	
+					break
 
 		return 'Fuckin test bot.'
 
