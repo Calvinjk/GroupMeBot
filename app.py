@@ -14,6 +14,7 @@ def masterRunEverything():
 		print 'viewed'
 		return 'This is the Test bot page.'
 	else:
+		return 'Panic'
 		# def respond():
 		# message = request.get_json(force=True)
 		# if message['name']!='Troll Bot':
