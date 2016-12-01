@@ -13,7 +13,7 @@ def hello_world():
 	print 'viewed'
  	return 'This is the Test bot page.'
 
-@app.route('/', methods = ['POST'])
+#@app.route('/', methods = ['POST'])
 # def respond():
 # 	message = request.get_json(force=True)
 # 	if message['name']!='Test Bot':
