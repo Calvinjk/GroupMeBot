@@ -25,8 +25,10 @@ def masterRunEverything():
 			m = me.findall(message['text'])
 			#firstWord = me.split(' ', 1)[0]
 			#lastWord = me.split(' ', 1)[-1]
-			if respondToEr(m):
-				say("{0} 'er? I hardly know her!".format(x[0:-2]))
+			
+			for x in m:
+				if len(x)>3:
+					say("{0} 'er? I hardly know her!".format(x[0:-2]))
 
 			#Harambe 
 			if 'harambe' in message['text'].lower():
@@ -41,11 +43,6 @@ def masterRunEverything():
  				say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
 
 		return 'Fuckin test bot.'
-
-def respondToEr(m):
-	for x in m:
-	if len(x)>3:
-		return true
 
 
 #@app.route('/', methods = ['POST'])
