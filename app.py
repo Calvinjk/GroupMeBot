@@ -11,6 +11,7 @@ def say(s):
 @app.route('/', methods = ['GET', 'POST'])
 def masterRunEverything():
 	if request.method == 'GET':
+		say('Web page viewed')
 		print 'viewed'
 		return 'This is the Test bot page.'
 	else:
