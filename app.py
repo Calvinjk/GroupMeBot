@@ -43,27 +43,21 @@ def masterRunEverything():
 			for word in wordList:
 				if word == 'joe':
 					randNum = random.randrange(0, 14)
+					sNum = 12
 
 					if randNum == 0:
-						sNum = 12
 						picSuffix = 't62zmp0f1/banana_Joe.jpg';
 					if randNum == 1:
-						sNum = 12
 						picSuffix = 'jzkozev6l/Joeand_Nick.jpg';
 					if randNum == 2:
-						sNum = 12
 						picSuffix = 'c83z0ur19/peacock_Joe.jpg';
 					if randNum == 3:
-						sNum = 12
 						picSuffix = '5ixfku5p9/Sleepy_Joe1.jpg';
 					if randNum == 4:
-						sNum = 12
 						picSuffix = '5uzinsuin/sleepyjoe2.jpg';
 					if randNum == 5:
-						sNum = 12
 						picSuffix = '4vyivb8t9/sleepyjoe3.jpg';
 					if randNum == 6:
-						sNum = 12
 						picSuffix = '5zin79tgd/sleepyjoe4.jpg';
 					if randNum == 7:
 						sNum = 16
