@@ -43,7 +43,7 @@ def masterRunEverything():
 			for word in wordList:
 				if word == 'joe':
 					randNum = random.randrange(0, 14)
-					sNum = 12
+					sNum = '12'
 
 					if randNum == 0:
 						picSuffix = 't62zmp0f1/banana_Joe.jpg';
@@ -60,25 +60,25 @@ def masterRunEverything():
 					if randNum == 6:
 						picSuffix = '5zin79tgd/sleepyjoe4.jpg';
 					if randNum == 7:
-						sNum = 16
+						sNum = '16'
 						picSuffix = '9uqjishgx/blowjobjoe.jpg';
 					if randNum == 8:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'q70l8ivsh/frenchmaidjoe.jpg';
 					if randNum == 9:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'ej6jdz6nl/joejames.jpg';
 					if randNum == 10:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'crimg6tm9/sexyyoungjoe.jpg';
 					if randNum == 11:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'm0ksqb2i9/tyreejoe.jpg';
 					if randNum == 12:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'j7rl6a25t/xrayjoe.jpg';
 					if randNum == 13:
-						sNum = 16
+						sNum = '16'
 						picSuffix = 'pzi094r5d/zombiejoe.jpg';
 
 					say('https://s' + sNum + '.postimg.org/' + picSuffix)	
