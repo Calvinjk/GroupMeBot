@@ -7,7 +7,11 @@ app = Flask(__name__)
 print 'run'
 
 def say(s):
+	# USE THIS LINE FOR LIVE
 	requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "2105543276296e8bd2fec9c082","text": s})
+	
+	# USE THIS LINE FOR DEVELOPMENT 
+	# requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "088ef849ec340699ee3cbeabb8","text": s})
 
 @app.route('/', methods = ['GET', 'POST'])
 def masterRunEverything():
@@ -20,10 +24,6 @@ def masterRunEverything():
 		if message['name']!='Heroku "The Bot"':
 
 			#Know her?
-			
-			#me = re.compile("\\b\\w+er\\b")
-			#m = me.findall(message['text'])
-			
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
 			last = wordList[-1]
 			first = wordList[0]
@@ -33,10 +33,9 @@ def masterRunEverything():
 			elif len(first) > 3 and first[-1] == 'r' and first[-2] == 'e':
 				say("{0} 'er? I hardly know her!".format(first[0:-2]))
 				
-
 			#Harambe 
 			if 'harambe' in message['text'].lower():
-						say("DICKS OUT")
+				say("DICKS OUT")
 
 			#Random Joe Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
@@ -85,32 +84,6 @@ def masterRunEverything():
 					break
 
 		return 'Fuckin test bot.'
-
-
-#@app.route('/', methods = ['POST'])
-# def respond():
-# 	message = request.get_json(force=True)
-# 	if message['name']!='Test Bot':
-# 		#if message['name'] == 'Michael Siciliano':
-# 			#say('Hi Mike, good to hear from you.')
-
-# 		me=re.compile("\\b\\w+er\\b")
-# 		m=me.findall(message['text'])
-# 		for x in m:
-# 			if len(x)>3:
-# 				say("{0} her? I hardly know her!".format(x[0:-2]))
-
-# 		#if 'just a gorilla' in message['text'].lower():
-# 			#say("https://i.groupme.com/750x500.jpeg.8987479304894b409885460900141d47")
-
-# 		elif 'harambe' in message['text'].lower():
-# 			say("DICKSOUT")
-
-# @app.route('/say', methods = ['GET'])
-# def send():
-# 	say('DICKSOUT')
-
-# 	return 'said dicksout.'
 
 if __name__ == '__main__':
     # listen on external IPs
