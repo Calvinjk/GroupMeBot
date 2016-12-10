@@ -8,6 +8,16 @@ def Harambe(message):
 
 #######################################
 
+def YoureStupid(lowerCaseMessage):
+	lowerCaseMessage.replace("'", "")
+	wordList = re.sub("[^\w]", " ", lowerCaseMessage).split()
+
+	if wordList[-2] == "its" wordList[-2] == "thats":
+		return "You're " + wordList[-1] + "!"
+	return "-1"
+
+#######################################
+
 def KnowHer(wordList):
 	last = wordList[-1]
 	first = wordList[0]
