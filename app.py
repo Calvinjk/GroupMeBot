@@ -2,6 +2,7 @@ from flask import Flask,request
 import requests
 import re
 import random
+import helperFunctions.py
 app = Flask(__name__)
 
 print 'run'
@@ -34,8 +35,7 @@ def masterRunEverything():
 				say("{0} 'er? I hardly know her!".format(first[0:-2]))
 				
 			#Harambe 
-			if 'harambe' in message['text'].lower():
-				say("DICKS OUT")
+			Harambe(message)
 
 			#Random People Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
