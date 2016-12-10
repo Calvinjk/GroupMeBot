@@ -37,7 +37,7 @@ def masterRunEverything():
 				say("{0} 'er? I hardly know her!".format(first[0:-2]))
 				
 			#Harambe 
-			say(helperFunctions.Harambe(message['text'].lower()))
+			say(Harambe(message['text'].lower()))
 
 			#Random People Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
