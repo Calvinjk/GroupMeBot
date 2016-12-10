@@ -39,6 +39,9 @@ def masterRunEverything():
 			# You're stupid!
 			say(YoureStupid(lowerCaseMessage))
 
+			# Are you fucking me?!
+			AreYouFuckingMe()
+
 		return 'Fuckin test bot.'
 
 if __name__ == '__main__':
