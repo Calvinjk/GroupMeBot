@@ -73,14 +73,55 @@ def PostJoePic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+def PostMariaPic():
+	randNum = random.randrange(0, 15)
+	sNum = '17'
+
+	if randNum == 0:
+		picSuffix = 'm421ddsu3/maria_1.jpg'
+	if randNum == 1:
+		picSuffix = '9qp76h35n/maria_2.jpg'
+	if randNum == 2:
+		picSuffix = 'p0p2dnynv/maria_3.jpg'
+	if randNum == 3:
+		picSuffix = '5k4cr53jv/maria_4.jpg'
+	if randNum == 4:
+		picSuffix = 'sa3hk4mrf/maria_5.jpg'
+	if randNum == 5:
+		picSuffix = 'qwbuotni3/maria_6.jpg'
+	if randNum == 6:
+		picSuffix = 'ndzusfmm3/maria_7.jpg'
+	if randNum == 7:
+		picSuffix = 'tgc2wo0fv/maria_8.jpg'
+	if randNum == 8:
+		picSuffix = 'e8w3cb8l7/maria_9.jpg'
+	if randNum == 9:
+		picSuffix = 'hh0kpcuuz/maria_10.jpg'
+	if randNum == 10:
+		picSuffix = 'bu47rvscb/maria_11.jpg'
+	if randNum == 11:
+		picSuffix = '42nhtbo6z/maria_12.jpg'
+	if randNum == 12:
+		picSuffix = 'h82zzfi2j/maria_13.jpg'
+	if randNum == 13:
+		picSuffix = 'wi2v6mdkr/maria_14.jpg'
+	if randNum == 14:
+		picSuffix = '6b1oanvaz/maria_15.jpg'
+
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
 def PeoplePics(wordList):
+	# TODO - implement switches so only one pic for each person is posted
 	for word in wordList:
 		# Joe
 		if word == 'joe':
 			return PostJoePic()	
 			break
 		
-		
+		# Maria / MC
+		if word == "maria" or word == "mc":
+			return PostMariaPic()
+			break
 
 	return "-0"
 
