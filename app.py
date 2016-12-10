@@ -10,7 +10,8 @@ print 'run'
 
 def say(s):
 	# USE THIS LINE FOR LIVE
-	requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "088ef849ec340699ee3cbeabb8","text": s})
+	if (s != "-0"):
+		requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "088ef849ec340699ee3cbeabb8","text": s})
 	
 	# USE THIS LINE FOR DEVELOPMENT 
 	# requests.post('https://api.groupme.com/v3/bots/post', data = {"bot_id": "088ef849ec340699ee3cbeabb8","text": s})
