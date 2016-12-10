@@ -2,7 +2,7 @@ from flask import Flask,request
 import requests
 import re
 import random
-import helperFunctions.py
+from helperFunctions.py import *
 app = Flask(__name__)
 
 print 'run'
