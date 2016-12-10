@@ -36,6 +36,9 @@ def masterRunEverything():
 			# Random People Pictures
 			say(PeoplePics(wordList))
 
+			# You're stupid!
+			say(YoureStupid(lowerCaseMessage))
+
 		return 'Fuckin test bot.'
 
 if __name__ == '__main__':
