@@ -111,6 +111,10 @@ def PostMariaPic():
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
 def PeoplePics(wordList):
+	# Return list of urls to post
+	returnURLS = []
+
+	# Switches so we only post one pic per person
 	joePosted = "false"
 	mariaPosted = "false"
 
@@ -118,13 +122,13 @@ def PeoplePics(wordList):
 		# Joe
 		if word == 'joe' and joePosted == "false":
 			joePosted = "true"
-			return PostJoePic()	
+			returnURLS.append(PostJoePic())	
 		
 		# Maria / MC
 		if word == "maria" or word == "mc" and mariaPosted == "false":
 			mariaPosted = "true"
-			return PostMariaPic()
+			returnURLS.append(PostMariaPic())
 
-	return "-0"
+	return returnURLS
 
 #######################################
