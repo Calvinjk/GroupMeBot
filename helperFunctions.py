@@ -65,7 +65,7 @@ def PostJoePic():
 
 def PostMariaPic():
 	randNum = random.randrange(0, 15)
-	sNum = 17
+	sNum = '17'
 
 	if randNum == 0:
 		picSuffix = 'm421ddsu3/maria_1.jpg'
