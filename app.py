@@ -37,9 +37,11 @@ def masterRunEverything():
 			if 'harambe' in message['text'].lower():
 				say("DICKS OUT")
 
-			#Random Joe Pictures
+			#Random People Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
 			for word in wordList:
+
+				# Joe
 				if word == 'joe':
 					randNum = random.randrange(0, 14)
 					sNum = '12'
