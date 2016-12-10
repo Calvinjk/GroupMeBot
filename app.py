@@ -24,23 +24,18 @@ def masterRunEverything():
 
 	if request.method == 'POST':
 		message = request.get_json(force=True)
+		lowerCaseMessage = message['text'].lower()
+
+		# Make sure bot doesnt respond to own messages
 		if message['name']!='Heroku "The Bot"':
 
-			#Know her?
-			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
-			last = wordList[-1]
-			first = wordList[0]
-			
-			if len(last) > 3 and last[-1] == 'r' and last[-2] == 'e':
-				say("{0} 'er? I hardly know her!".format(last[0:-2]))
-				print 'got em'
-			elif len(first) > 3 and first[-1] == 'r' and first[-2] == 'e':
-				say("{0} 'er? I hardly know her!".format(first[0:-2]))
+			# Know her?
+			say(KnowHer(lowerCaseMessage))
 				
-			#Harambe 
-			say(Harambe(message['text'].lower()))
+			# Harambe 
+			say(Harambe(lowerCaseMessage))
 
-			#Random People Pictures
+			# Random People Pictures
 			wordList = re.sub("[^\w]", " ", message['text'].lower()).split()
 			for word in wordList:
 
