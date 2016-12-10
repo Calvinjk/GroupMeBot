@@ -34,7 +34,9 @@ def masterRunEverything():
 			say(Harambe(lowerCaseMessage))
 
 			# Random People Pictures
-			say(PeoplePics(wordList))
+			returnURLS = PeoplePics(wordList)
+			for url in returnURLS:
+				say(url)
 
 			# You're stupid!
 			say(YoureStupid(lowerCaseMessage))

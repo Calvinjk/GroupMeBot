@@ -130,18 +130,22 @@ def PostMariaPic():
 ############### People Pics ###############
 
 def PeoplePics(wordList):
-	joePosted = false
-	mariaPosted = false
+	# Return list of urls to post
+	returnURLS = []
+
+	# Switches so we only post one pic per person
+	joePosted = "false"
+	mariaPosted = "false"
 
 	for word in wordList:
 		# Joe
-		if word == 'joe' and joePosted == false:
-			joePosted = true
-			return PostJoePic()	
+		if word == 'joe' and joePosted == "false":
+			joePosted = "true"
+			returnURLS.append(PostJoePic())	
 		
 		# Maria / MC
-		if word == "maria" or word == "mc" and mariaPosted == false:
-			mariaPosted = true
-			return PostMariaPic()
+		if (word == "maria" or word == "mc") and mariaPosted == "false":
+			mariaPosted = "true"
+			returnURLS.append(PostMariaPic())
 
-	return "-0"
+	return returnURLS
