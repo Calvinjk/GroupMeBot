@@ -111,18 +111,18 @@ def PostMariaPic():
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
 def PeoplePics(wordList):
-	joePosted = false
-	mariaPosted = false
+	joePosted = "false"
+	mariaPosted = "false"
 
 	for word in wordList:
 		# Joe
-		if word == 'joe' and joePosted == false:
-			joePosted = true
+		if word == 'joe' and joePosted == "false":
+			joePosted = "true"
 			return PostJoePic()	
 		
 		# Maria / MC
-		if word == "maria" or word == "mc" and mariaPosted == false:
-			mariaPosted = true
+		if word == "maria" or word == "mc" and mariaPosted == "false":
+			mariaPosted = "true"
 			return PostMariaPic()
 
 	return "-0"
