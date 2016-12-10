@@ -125,7 +125,7 @@ def PeoplePics(wordList):
 			returnURLS.append(PostJoePic())	
 		
 		# Maria / MC
-		if word == "maria" or word == "mc" and mariaPosted == "false":
+		if (word == "maria" or word == "mc") and mariaPosted == "false":
 			mariaPosted = "true"
 			returnURLS.append(PostMariaPic())
 
