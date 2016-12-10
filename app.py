@@ -3,6 +3,7 @@ import requests
 import re
 import random
 from helperFunctions import *
+import logging
 app = Flask(__name__)
 
 print 'run'
@@ -31,6 +32,7 @@ def masterRunEverything():
 			
 			if len(last) > 3 and last[-1] == 'r' and last[-2] == 'e':
 				say("{0} 'er? I hardly know her!".format(last[0:-2]))
+				print 'got em'
 			elif len(first) > 3 and first[-1] == 'r' and first[-2] == 'e':
 				say("{0} 'er? I hardly know her!".format(first[0:-2]))
 				
