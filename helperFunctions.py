@@ -12,7 +12,7 @@ def YoureStupid(lowerCaseMessage):
 	lowerCaseMessage.replace("'", "")
 	wordList = re.sub("[^\w]", " ", lowerCaseMessage).split()
 
-	if wordList[-2] == "its" wordList[-2] == "thats":
+	if wordList[-2] == "its" or wordList[-2] == "thats":
 		return "You're " + wordList[-1] + "!"
 	return "-1"
 
