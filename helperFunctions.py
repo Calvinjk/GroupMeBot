@@ -33,43 +33,36 @@ def KnowHer(wordList):
 #######################################
 def PostJoePic():
 	randNum = random.randrange(0, 14)
-	sNum = '12'
+	sNum = '20'
 
 	if randNum == 0:
-		picSuffix = 't62zmp0f1/banana_Joe.jpg'
+		picSuffix = 'v0r261evx/banana_Joe.jpg'
 	if randNum == 1:
-		picSuffix = 'jzkozev6l/Joeand_Nick.jpg'
+		picSuffix = 'p13b2du3h/blowjobjoe.jpg'
 	if randNum == 2:
-		picSuffix = 'c83z0ur19/peacock_Joe.jpg'
+		picSuffix = 'prw185wgt/frenchmaidjoe.jpg'
 	if randNum == 3:
-		picSuffix = '5ixfku5p9/Sleepy_Joe1.jpg'
+		picSuffix = 'pt5z1kyal/Joeand_Nick.jpg'
 	if randNum == 4:
-		picSuffix = '5uzinsuin/sleepyjoe2.jpg'
+		picSuffix = 'o2my03grh/joejames.jpg'
 	if randNum == 5:
-		picSuffix = '4vyivb8t9/sleepyjoe3.jpg'
+		picSuffix = '73ikykuxp/peacock_Joe.jpg'
 	if randNum == 6:
-		picSuffix = '5zin79tgd/sleepyjoe4.jpg'
+		picSuffix = 'y2mftqhel/sexyyoungjoe.jpg'
 	if randNum == 7:
-		sNum = '16'
-		picSuffix = '9uqjishgx/blowjobjoe.jpg'
+		picSuffix = 'hg4vknogt/Sleepy_Joe1.jpg'
 	if randNum == 8:
-		sNum = '16'
-		picSuffix = 'q70l8ivsh/frenchmaidjoe.jpg'
+		picSuffix = '4d991dy8t/sleepyjoe2.jpg'
 	if randNum == 9:
-		sNum = '16'
-		picSuffix = 'ej6jdz6nl/joejames.jpg'
+		picSuffix = 'nwduaqx0d/sleepyjoe3.jpg'
 	if randNum == 10:
-		sNum = '16'
-		picSuffix = 'crimg6tm9/sexyyoungjoe.jpg'
+		picSuffix = 'epvjngrrx/sleepyjoe4.jpg'
 	if randNum == 11:
-		sNum = '16'
-		picSuffix = 'm0ksqb2i9/tyreejoe.jpg'
+		picSuffix = 'sktu5xm71/tyreejoe.jpg'
 	if randNum == 12:
-		sNum = '16'
-		picSuffix = 'j7rl6a25t/xrayjoe.jpg'
+		picSuffix = 'a6jb1y9wd/xrayjoe.jpg'
 	if randNum == 13:
-		sNum = '16'
-		picSuffix = 'pzi094r5d/zombiejoe.jpg'
+		picSuffix = 'rl3ja8719/zombiejoe.jpg'
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
