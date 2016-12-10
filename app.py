@@ -6,8 +6,6 @@ from helperFunctions import *
 import logging
 app = Flask(__name__)
 
-print 'run'
-
 def say(s):
 	# USE THIS LINE FOR LIVE
 	if (s != "-0"):
@@ -19,18 +17,18 @@ def say(s):
 @app.route('/', methods = ['GET', 'POST'])
 def masterRunEverything():
 	if request.method == 'GET':
-		print 'viewed'
 		return 'This is the Test bot page.'
 
 	if request.method == 'POST':
 		message = request.get_json(force=True)
 		lowerCaseMessage = message['text'].lower()
+		wordList = re.sub("[^\w]", " ", lowerCaseMessage).split()
 
 		# Make sure bot doesnt respond to own messages
 		if message['name']!='Heroku "The Bot"':
 
 			# Know her?
-			say(KnowHer(lowerCaseMessage))
+			say(KnowHer(wordList))
 				
 			# Harambe 
 			say(Harambe(lowerCaseMessage))

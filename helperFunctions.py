@@ -11,6 +11,11 @@ def KnowHer(wordList):
 	last = wordList[-1]
 	first = wordList[0]
 			
+	print(last)
+	print(len(last))
+	print(first)
+	print(len(first))
+
 	if len(last) > 3 and last[-1] == 'r' and last[-2] == 'e':
 		return "{0} 'er? I hardly know her!".format(last[0:-2])
 
