@@ -78,35 +78,35 @@ def PostMariaPic():
 	sNum = '17'
 
 	if randNum == 0:
-		picSuffix = 'm421ddsu3/maria_1.jpg'
+		picSuffix = 'uz2vnwhmn/maria_1.jpg'
 	if randNum == 1:
-		picSuffix = '9qp76h35n/maria_2.jpg'
+		picSuffix = 's69o3vha7/maria_2.jpg'
 	if randNum == 2:
-		picSuffix = 'p0p2dnynv/maria_3.jpg'
+		picSuffix = 'qsi18ki0v/maria_3.jpg'
 	if randNum == 3:
-		picSuffix = '5k4cr53jv/maria_4.jpg'
+		picSuffix = '5wvqxbltr/maria_4.jpg'
 	if randNum == 4:
-		picSuffix = 'sa3hk4mrf/maria_5.jpg'
+		picSuffix = 'ak1sz396n/maria_5.jpg'
 	if randNum == 5:
-		picSuffix = 'qwbuotni3/maria_6.jpg'
+		picSuffix = 'usp6kt8hr/maria_6.jpg'
 	if randNum == 6:
-		picSuffix = 'ndzusfmm3/maria_7.jpg'
+		picSuffix = 'ndzusfmm7/maria_7.jpg'
 	if randNum == 7:
-		picSuffix = 'tgc2wo0fv/maria_8.jpg'
+		picSuffix = 'ao07t341r/maria_8.jpg'
 	if randNum == 8:
-		picSuffix = 'e8w3cb8l7/maria_9.jpg'
+		picSuffix = 'p8hanwz0f/maria_9.jpg'
 	if randNum == 9:
-		picSuffix = 'hh0kpcuuz/maria_10.jpg'
+		picSuffix = 'mfo33vynz/maria_10.jpg'
 	if randNum == 10:
-		picSuffix = 'bu47rvscb/maria_11.jpg'
+		picSuffix = '65xx0znzz/maria_11.jpg'
 	if randNum == 11:
-		picSuffix = '42nhtbo6z/maria_12.jpg'
+		picSuffix = '7m9fj4qwv/maria_12.jpg'
 	if randNum == 12:
-		picSuffix = 'h82zzfi2j/maria_13.jpg'
+		picSuffix = 'mjhwk545b/maria_13.jpg'
 	if randNum == 13:
-		picSuffix = 'wi2v6mdkr/maria_14.jpg'
+		picSuffix = '7otb5yukf/maria_14.jpg'
 	if randNum == 14:
-		picSuffix = '6b1oanvaz/maria_15.jpg'
+		picSuffix = 'q5npwsain/maria_15.jpg'
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
