@@ -7,7 +7,7 @@ def say(s):
 
 
 def Harambe(message):
-	if 'harambe' in message['text'].lower():
+	if 'harambe' in message:
 		say("DICKS OUT")
 
 
