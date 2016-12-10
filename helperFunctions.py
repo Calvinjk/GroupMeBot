@@ -8,8 +8,8 @@ def say2(s):
 
 def Harambe(message):
 	if 'harambe' in message:
-		say2("DICKS OUT")
-	return
+		return "DICKS OUT"
+	return "DICKS IN"
 
 
 
