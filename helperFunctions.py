@@ -1,12 +1,14 @@
 import re
 import random
 
+############### HARAMBE ###############
+
 def Harambe(message):
 	if 'harambe' in message:
 		return "DICKS OUT"
 	return "-0"
 
-#######################################
+############### You're Stupid ###############
 
 def YoureStupid(lowerCaseMessage):
 	lowerCaseMessage = lowerCaseMessage.replace("'", "")
@@ -16,7 +18,7 @@ def YoureStupid(lowerCaseMessage):
 		return "You're " + wordList[-1] + "!"
 	return "-0"
 
-#######################################
+############### Know Her ###############
 
 def KnowHer(wordList):
 	last = wordList[-1]
@@ -30,7 +32,18 @@ def KnowHer(wordList):
 	
 	return "-0"
 
-#######################################
+############### Are you fucking me?! ###############
+
+def AreYouFuckingMe():
+
+	randNum = random.randrange(0, 100)
+	if randNum == 20:
+		return "Are you fucking me?!"
+		
+	return "-0"
+
+############### Post Joe Pic ###############
+
 def PostJoePic():
 	randNum = random.randrange(0, 14)
 	sNum = '20'
@@ -65,6 +78,9 @@ def PostJoePic():
 		picSuffix = 'rl3ja8719/zombiejoe.jpg'
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
+
+############### Post Maria Pic ###############	
 
 def PostMariaPic():
 	randNum = random.randrange(0, 15)
@@ -103,6 +119,9 @@ def PostMariaPic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+
+############### People Pics ###############
+
 def PeoplePics(wordList):
 	# Return list of urls to post
 	returnURLS = []
@@ -123,5 +142,3 @@ def PeoplePics(wordList):
 			returnURLS.append(PostMariaPic())
 
 	return returnURLS
-
-#######################################
