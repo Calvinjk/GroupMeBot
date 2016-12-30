@@ -243,7 +243,7 @@ def PeoplePics(wordList):
 				word == "tyree-ree" or word == "ree-ree" or word == "tyred" or
 				word == "tyke" or word == "typickle" or word == "typical" or
 				word == "three" or word == "ty-chi" or word == "tyrella" or
-				word == "tybrisa") and tyreePosted == "false":
+				word == "tybrisa" or word == "rex") and tyreePosted == "false":
 			tyreePosted = "true"
 			returnURLS.append(PostTyreePic())
 
