@@ -230,8 +230,20 @@ def PeoplePics(wordList):
 			mariaPosted = "true"
 			returnURLS.append(PostMariaPic())
 
-		# Tyree / Tree
-		if (word == "tyree" or word == "tree") and tyreePosted == "false":
+		# Tyree
+		if (word == "tyree" or word == "tree" or word == "tyreedo" or 
+				word == "tyrizzle" or word == "tysizzle" or word == "tyrell" or
+				word == "tyrone" or word == "tyrannosaurus" or word == "ty-ty" or
+				word == "tyrhonda" or word == "tyrion" or word == "tyranny" or
+				word == "typhoon" or word == "tycoon" or word == "tyrant" or
+				word == "ty" or word == "tyrea" or word == "tymara" or
+				word == "tyrkey" or word == "tyger" or word == "tycho" or
+				word == "neckty" or word == "tyson" or word == "noty" or
+				word == "tyedye" or word == "ty-dye" or word == "typhoid" or 
+				word == "tyree-ree" or word == "ree-ree" or word == "tyred" or
+				word == "tyke" or word == "typickle" or word == "typical" or
+				word == "three" or word == "ty-chi" or word == "tyrella" or
+				word == "tybrisa") and tyreePosted == "false":
 			tyreePosted = "true"
 			returnURLS.append(PostTyreePic())
 
