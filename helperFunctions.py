@@ -208,6 +208,51 @@ def PostTyreePic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+############### Post Alexis Pic ###############	
+
+def PostAlexisPic():
+	randNum = random.randrange(0, 18)
+	sNum = '20'
+
+	if randNum == 0:
+		picSuffix = 's0wrqdi1p/alexis_1.jpg'
+	if randNum == 1:
+		picSuffix = 'ngalbfycd/alexis_2.jpg'
+	if randNum == 2:
+		picSuffix = '6tt12d5el/alexis_3.jpg'
+	if randNum == 3:
+		picSuffix = '65k6jf6ot/alexis_4.jpg'
+	if randNum == 4:
+		picSuffix = 'ecc6azwrh/alexis_5.jpg'
+	if randNum == 5:
+		picSuffix = 'h7p9hv0rh/alexis_6.jpg'
+	if randNum == 6:
+		picSuffix = 'bkswkdy8t/alexis_7.jpg'
+	if randNum == 7:
+		picSuffix = 'ueephdwgt/alexis_8.jpg'
+	if randNum == 8:
+		picSuffix = '6bxvmiftp/alexis_9.jpg'
+	if randNum == 9:
+		picSuffix = '6d7tfxhnh/alexis_10.jpg'
+	if randNum == 10:
+		picSuffix = 'anr2p9c4d/alexis_11.jpg'
+	if randNum == 11:
+		picSuffix = '6snomosyl/alexis_12.jpg'
+	if randNum == 12:
+		picSuffix = 'vzykmxw2l/alexis_13.jpg'
+	if randNum == 13:
+		picSuffix = 'oy0n0qsgt/alexis_14.jpg'
+	if randNum == 14:
+		picSuffix = 'xubf4oj31/alexis_15.jpg'
+	if randNum == 15:
+		picSuffix = 'imvfkbr8d/alexis_16.jpg'
+	if randNum == 16:
+		picSuffix = '578euviqj/alexis_17.jpg'
+	if randNum == 17:
+		picSuffix = 'w6c9q157h/alexis_18.jpg'
+
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -218,6 +263,7 @@ def PeoplePics(wordList):
 	joePosted = "false"
 	mariaPosted = "false"
 	tyreePosted = "false"
+	alexisPosted = "false"
 
 	for word in wordList:
 		# Joe
@@ -246,5 +292,10 @@ def PeoplePics(wordList):
 				word == "tybrisa" or word == "rex") and tyreePosted == "false":
 			tyreePosted = "true"
 			returnURLS.append(PostTyreePic())
+
+		# Alexis
+		if word == "alexis" and alexisPosted == "false":
+			alexisPosted = "true"
+			returnURLS.append(PostAlexisPic())
 
 	return returnURLS
