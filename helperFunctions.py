@@ -449,12 +449,12 @@ def PostNickPic():
 
 ############### Post Calvin Pic ###############
 
- def PostCalvinPic():
+def PostCalvinPic():
 	 return 'https://s20.postimg.org/a275q9ndp/calvin.jpg'
 
 ############### Post Monica Pic ###############
 
- def PostMonicaPic():
+def PostMonicaPic():
 	return 'https://s20.postimg.org/h6oyzaun1/monica.png'
 
 ############### People Pics ###############
