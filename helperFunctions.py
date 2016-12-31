@@ -347,6 +347,55 @@ def PostCarleyPic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+############### Post Bambi Pic ###############	
+
+def PostBambiPic():
+	randNum = random.randrange(0, 21)
+	sNum = '20'
+
+	if randNum == 0:
+		picSuffix = 's37x53nvh/bambi_1.jpg'
+	if randNum == 1:
+		picSuffix = 'pn63r95st/bambi_2.jpg'
+	if randNum == 2:
+		picSuffix = 'sij6y49st/bambi_3.jpg'
+	if randNum == 3:
+		picSuffix = '5icjlsbz1/bambi_4.jpg'
+	if randNum == 4:
+		picSuffix = 'gvz2wzmhp/bambi_5.jpg'
+	if randNum == 5:
+		picSuffix = '8ezkm2hst/bambi_6.jpg'
+	if randNum == 6:
+		picSuffix = '5m6d21hgd/bambi_7.jpg'
+	if randNum == 7:
+		picSuffix = 'xnkefqmql/bambi_8.jpg'
+	if randNum == 8:
+		picSuffix = 'fyx91v0d9/bambi_9.jpg'
+	if randNum == 9:
+		picSuffix = 'divfo0ial/bambi_10.jpg'
+	if randNum == 10:
+		picSuffix = 'b2tma607x/bambi_11.jpg'
+	if randNum == 11:
+		picSuffix = '4dn2u5evx/bambi_12.jpg'
+	if randNum == 12:
+		picSuffix = 'wrsie12fx/bambi_13.jpg'
+	if randNum == 13:
+		picSuffix = '5ih4zj1ct/bambi_14.jpg'
+	if randNum == 14:
+		picSuffix = 'erjb9na8t/bambi_15.jpg'
+	if randNum == 15:
+		picSuffix = 's9q7lxme5/bambi_16.jpg'
+	if randNum == 16:
+		picSuffix = '3uhzkvnh9/bambi_17.jpg'
+	if randNum == 17:
+		picSuffix = '6pv2rqrh9/bambi_18.jpg'
+	if randNum == 18:
+		picSuffix = 'aavjoplel/bambi_19.jpg'
+	if randNum == 19:
+		picSuffix = 'v91pmsl99/bambi_20.jpg'
+	if randNum == 20:
+		picSuffix = 'rdybk823h/bambi_21.jpg'
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -360,6 +409,7 @@ def PeoplePics(wordList):
 	alexisPosted 	= "false"
 	rudyPosted 		= "false"
 	carleyPosted	= "false"
+	bambiPosted		= "false"
 
 	for word in wordList:
 		# Joe
@@ -403,5 +453,10 @@ def PeoplePics(wordList):
 		if (word == "carley" or word == "carl") and carleyPosted == "false":
 			carleyPosted = "true"
 			returnURLS.append(PostCarleyPic())
+
+		# Bambi
+		if (word == "bambi" or word == "brandt") and bambiPosted == "false":
+			bambiPosted = "true"
+			returnURLS.append(PostBambiPic())
 
 	return returnURLS
