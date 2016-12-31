@@ -447,6 +447,16 @@ def PostNickPic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+############### Post Calvin Pic ###############
+
+ def PostCalvinPic():
+	 return "https://s20.postimg.org/a275q9ndp/calvin.jpg"
+
+############### Post Monica Pic ###############
+
+ def PostMonicaPic():
+	return "https://s20.postimg.org/h6oyzaun1/monica.png"
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -462,6 +472,8 @@ def PeoplePics(wordList):
 	carleyPosted	= "false"
 	bambiPosted		= "false"
 	nickPosted 		= "false"
+	calvinPosted 	= "false"
+	monicaPosted	= "false"
 
 	for word in wordList:
 		# Joe
@@ -515,5 +527,15 @@ def PeoplePics(wordList):
 		if (word == "nick" or word == "nicolas") and nickPosted == "false":
 			nickPosted = "true"
 			returnURLS.append(PostNickPic())
+
+		# Calvin
+		if (word == "calvin" or word == "cal") and calvinPosted == "false":
+			calvinPosted = "true"
+			returnURLS.append(PostCalvinPic())
+		
+		# Mah Nicca
+		if (word == "monica" or word == "nicca" or word == "nigga") and monicaPosted == "false":
+			monicaPosted = "true"
+			returnURLS.append(PostMonicaPic())
 
 	return returnURLS
