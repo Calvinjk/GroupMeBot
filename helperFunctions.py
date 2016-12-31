@@ -45,7 +45,7 @@ def AreYouFuckingMe():
 ############### Post Joe Pic ###############
 
 def PostJoePic():
-	randNum = random.randrange(0, 14)
+	randNum = random.randrange(0, 15)
 	sNum = '20'
 
 	if randNum == 0:
@@ -76,6 +76,8 @@ def PostJoePic():
 		picSuffix = 'a6jb1y9wd/xrayjoe.jpg'
 	if randNum == 13:
 		picSuffix = 'rl3ja8719/zombiejoe.jpg'
+	if randNum == 14:
+		picSuffix = 'hmimbaa3h/mousejoe.jpg'
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
@@ -308,6 +310,43 @@ def PostRudyPic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+############### Post Carley Pic ###############
+
+def PostCarleyPic():
+	randNum = random.randrange(0, 14)
+	sNum = '20'
+
+	if randNum == 0:
+		picSuffix = '5lx6ak2ot/carley_1.jpg'
+	if randNum == 1:
+		picSuffix = '485jf93fh/carley_2.jpg'
+	if randNum == 2:
+		picSuffix = '7gem61f31/carley_3.jpg'
+	if randNum == 3:
+		picSuffix = 'nsonvrtel/carley_4.jpg'
+	if randNum == 4:
+		picSuffix = 'y410ofl3x/carley_5.jpg'
+	if randNum == 5:
+		picSuffix = 'huauljafx/carley_6.jpg'
+	if randNum == 6:
+		picSuffix = 'ixuyxhv31/carley_7.jpg'
+	if randNum == 7:
+		picSuffix = 'jonp39xgd/carley_8.jpg'
+	if randNum == 8:
+		picSuffix = '9fv7xg9el/carley_9.jpg'
+	if randNum == 9:
+		picSuffix = '9h55qvb8d/carley_10.jpg'
+	if randNum == 10:
+		picSuffix = 'vhli7htwd/carley_11.jpg'
+	if randNum == 11:
+		picSuffix = 'mb37k7onx/carley_12.jpg'
+	if randNum == 12:
+		picSuffix = 'u58ejclul/carley_13.jpg'
+	if randNum == 13:
+		picSuffix = 'dvi8ggb6l/carley_14.jpg'
+
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -320,6 +359,7 @@ def PeoplePics(wordList):
 	tyreePosted 	= "false"
 	alexisPosted 	= "false"
 	rudyPosted 		= "false"
+	carleyPosted	= "false"
 
 	for word in wordList:
 		# Joe
@@ -358,5 +398,10 @@ def PeoplePics(wordList):
 		if (word == "rudy" or word == "wudy") and rudyPosted == "false":
 			rudyPosted = "true"
 			returnURLS.append(PostRudyPic())
+
+		# Carley
+		if (word == "carley" or word == "carl") and carleyPosted == "false":
+			carleyPosted = "true"
+			returnURLS.append(PostCarleyPic())
 
 	return returnURLS
