@@ -396,6 +396,53 @@ def PostBambiPic():
 	if randNum == 20:
 		picSuffix = 'rdybk823h/bambi_21.jpg'
 
+############### Post Nick Pic ###############	
+
+def PostNickPic():
+	randNum = random.randrange(0, 20)
+	sNum = '20'
+
+	if randNum == 0:
+		picSuffix = '65kn2snml/nick_1.jpg'
+	if randNum == 1:
+		picSuffix = 'a37ws7afx/nick_2.jpg'
+	if randNum == 2:
+		picSuffix = 'uomok3s0t/nick_3.jpg'
+	if randNum == 3:
+		picSuffix = 'pehpst7rx/nick_4.jpg'
+	if randNum == 4:
+		picSuffix = '7ppz16w0t/nick_5.jpg'
+	if randNum == 5:
+		picSuffix = 'np8mkqs2l/nick_6.jpg'
+	if randNum == 6:
+		picSuffix = 'xntl781i5/nick_7.jpg'
+	if randNum == 7:
+		picSuffix = 'wmxxvu9wd/nick_8.jpg'
+	if randNum == 8:
+		picSuffix = 'ovh7xa5r1/nick_9.jpg'
+	if randNum == 9:
+		picSuffix = '4cmbs7rtp/nick_10.jpg'
+	if randNum == 10:
+		picSuffix = 'nizive8bh/nick_11.jpg'
+	if randNum == 11:
+		picSuffix = 'ywm26liu5/nick_12.jpg'
+	if randNum == 12:
+		picSuffix = 'tz8hlhgv1/nick_13.jpg'
+	if randNum == 13:
+		picSuffix = '5wrnqm07x/nick_14.jpg'
+	if randNum == 14:
+		picSuffix = 'vtlc383vh/nick_15.jpg'
+	if randNum == 15:
+		picSuffix = 'baqfy5py5/nick_16.jpg'
+	if randNum == 16:
+		picSuffix = 'kjsm89yu5/nick_17.jpg'
+	if randNum == 17:
+		picSuffix = 'tg7zpyeu5/nick_18.jpg'
+	if randNum == 18:
+		picSuffix = 'uwji83hr1/nick_19.jpg'
+	if randNum == 19:
+		picSuffix = '4cqx5yh7h/nick_20.jpg'
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -410,6 +457,7 @@ def PeoplePics(wordList):
 	rudyPosted 		= "false"
 	carleyPosted	= "false"
 	bambiPosted		= "false"
+	nickPosted 		= "false"
 
 	for word in wordList:
 		# Joe
@@ -458,5 +506,10 @@ def PeoplePics(wordList):
 		if (word == "bambi" or word == "brandt") and bambiPosted == "false":
 			bambiPosted = "true"
 			returnURLS.append(PostBambiPic())
+
+		# Nick
+		if (word == "nick" or word == "nicolas") and nickPosted == "false":
+			nickPosted = "true"
+			returnURLS.append(PostNickPic())
 
 	return returnURLS
