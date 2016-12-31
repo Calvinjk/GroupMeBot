@@ -295,7 +295,7 @@ def PostRudyPic():
 		picSuffix = 'aj65hxfa5/rudy_17.jpg'
 	if randNum == 17:
 		picSuffix = 'vhcbg0f4t/rudy_18.jpg'
-	if randNum == 18
+	if randNum == 18:
 		picSuffix = 'euur6xm71/rudy_19.jpg'
 	if randNum == 19:
 		picSuffix = 'ismma2ye5/rudy_20.jpg'
@@ -303,7 +303,7 @@ def PostRudyPic():
 		picSuffix = 'fzteq1y1p/rudy_21.jpg'
 	if randNum == 21:
 		picSuffix = 'acx1skvj1/rudy_22.jpg'
-	if randNum == 2:
+	if randNum == 22:
 		picSuffix = 'yup5ggy3h/rudy_23.jpg'
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
