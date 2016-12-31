@@ -396,6 +396,8 @@ def PostBambiPic():
 	if randNum == 20:
 		picSuffix = 'rdybk823h/bambi_21.jpg'
 
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
 ############### Post Nick Pic ###############	
 
 def PostNickPic():
@@ -442,6 +444,8 @@ def PostNickPic():
 		picSuffix = 'uwji83hr1/nick_19.jpg'
 	if randNum == 19:
 		picSuffix = '4cqx5yh7h/nick_20.jpg'
+
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
 ############### People Pics ###############
 
