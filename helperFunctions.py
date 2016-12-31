@@ -450,7 +450,7 @@ def PostNickPic():
 ############### Post Calvin Pic ###############
 
 def PostCalvinPic():
-	 return 'https://s20.postimg.org/a275q9ndp/calvin.jpg'
+	return 'https://s20.postimg.org/a275q9ndp/calvin.jpg'
 
 ############### Post Monica Pic ###############
 
