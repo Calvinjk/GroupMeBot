@@ -253,6 +253,61 @@ def PostAlexisPic():
 
 	return 'https://s' + sNum + '.postimg.org/' + picSuffix
 
+############### Post Rudy Pic ###############	
+
+def PostRudyPic():
+	randNum = random.randrange(0, 23)
+	sNum = '20'
+
+	if randNum == 0:
+		picSuffix = 'uvir65uot/rudy_1.jpg'
+	if randNum == 1:
+		picSuffix = '8kuw66xel/rudy_2.jpg'
+	if randNum == 2:
+		picSuffix = 'htx2gb6al/rudy_3.jpg'
+	if randNum == 3:
+		picSuffix = 'uzckmf065/rudy_4.jpg'
+	if randNum == 4:
+		picSuffix = 'nkn8u1eal/rudy_5.jpg'
+	if randNum == 5:
+		picSuffix = 'wgy0xz4wt/rudy_6.jpg'
+	if randNum == 6:
+		picSuffix = 'hm9fjsvbx/rudy_7.jpg'
+	if randNum == 7:
+		picSuffix = 'gy0l0uwm5/rudy_8.jpg'
+	if randNum == 8:
+		picSuffix = '4knqty6xp/rudy_9.jpg'
+	if randNum == 9:
+		picSuffix = 'otfptevml/rudy_10.jpg'
+	if randNum == 10:
+		picSuffix = 'b11axs4v1/rudy_11.jpg'
+	if randNum == 11:
+		picSuffix = 's2u4zvjq5/rudy_12.jpg'
+	if randNum == 12:
+		picSuffix = 'iwbuclehp/rudy_13.jpg'
+	if randNum == 13:
+		picSuffix = 'mtz4201b1/rudy_14.jpg'
+	if randNum == 14:
+		picSuffix = 'biwgdmufx/rudy_15.jpg'
+	if randNum == 15:
+		picSuffix = 'b7f00vdzx/rudy_16.jpg'
+	if randNum == 16:
+		picSuffix = 'aj65hxfa5/rudy_17.jpg'
+	if randNum == 17:
+		picSuffix = 'vhcbg0f4t/rudy_18.jpg'
+	if randNum == 18
+		picSuffix = 'euur6xm71/rudy_19.jpg'
+	if randNum == 19:
+		picSuffix = 'ismma2ye5/rudy_20.jpg'
+	if randNum == 20:
+		picSuffix = 'fzteq1y1p/rudy_21.jpg'
+	if randNum == 21:
+		picSuffix = 'acx1skvj1/rudy_22.jpg'
+	if randNum == 2:
+		picSuffix = 'yup5ggy3h/rudy_23.jpg'
+
+	return 'https://s' + sNum + '.postimg.org/' + picSuffix
+
 ############### People Pics ###############
 
 def PeoplePics(wordList):
@@ -260,10 +315,11 @@ def PeoplePics(wordList):
 	returnURLS = []
 
 	# Switches so we only post one pic per person
-	joePosted = "false"
-	mariaPosted = "false"
-	tyreePosted = "false"
-	alexisPosted = "false"
+	joePosted 		= "false"
+	mariaPosted 	= "false"
+	tyreePosted 	= "false"
+	alexisPosted 	= "false"
+	rudyPosted 		= "false"
 
 	for word in wordList:
 		# Joe
@@ -297,5 +353,10 @@ def PeoplePics(wordList):
 		if word == "alexis" and alexisPosted == "false":
 			alexisPosted = "true"
 			returnURLS.append(PostAlexisPic())
+
+		# Rudy
+		if (word == "rudy" or word == "wudy") and rudyPosted == "false":
+			rudyPosted = "true"
+			returnURLS.append(PostRudyPic())
 
 	return returnURLS
