@@ -42,7 +42,7 @@ def masterRunEverything():
 			say(YoureStupid(lowerCaseMessage))
 
 			# Are you fucking me?!
-			AreYouFuckingMe()
+			say(AreYouFuckingMe())
 
 		return 'Fuckin test bot.'
 
