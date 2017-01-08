@@ -36,7 +36,7 @@ def KnowHer(wordList):
 
 def AreYouFuckingMe():
 
-	randNum = random.randrange(0, 100)
+	randNum = random.randrange(0, 50)
 	if randNum == 20:
 		return "Are you fucking me?!"
 		
