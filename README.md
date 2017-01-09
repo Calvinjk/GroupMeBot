@@ -2,7 +2,6 @@
 
 ```
 Inconceivable
-Are you fucking me?
 Never define context
 That's / it's ______ ------> You're _________!
 Chatbot, smite ______
